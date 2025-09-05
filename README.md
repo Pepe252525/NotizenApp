@@ -8,7 +8,6 @@ Einfache Java-Konsolenanwendung zum Erstellen und Verwalten von Notizen.
 - Notizen anzeigen
 - Notizen durchsuchen
 - Speichern in Datei
-- Das ist ein Test für das Repo
 
 ## Starten
 ```bash
