@@ -1,6 +1,7 @@
+package notizenapp.src;
 public class MainTest {
 public static void main(String []args){
-    
+
     Note n1 = new Note("Einkauf","Brot,Eier,Milch");
         System.out.println(n1);
 
