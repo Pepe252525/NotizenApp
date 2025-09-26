@@ -12,4 +12,4 @@ Einfache Java-Konsolenanwendung zum Erstellen und Verwalten von Notizen.
 ## Starten
 ```bash
 javac src/Main.java
-#DAs ist ein Test
+
