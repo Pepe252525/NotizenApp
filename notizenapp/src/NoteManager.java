@@ -43,4 +43,5 @@ public class NoteManager {
                             }
                                 return result;
                     }
+// Getter und Setter MEthoden für die Ausgabe der Liste notes.
 }
