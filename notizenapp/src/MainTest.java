@@ -38,6 +38,7 @@ public static void main(String []args){
     manager2.setNotes(fh.loadNotes("notes.txt"));
     manager2.listNotes();
         }
+// Testfälle für die automatische Speicherung 
 
 }
 

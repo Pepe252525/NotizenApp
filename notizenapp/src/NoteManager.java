@@ -11,9 +11,15 @@ import java.util.List;
 public class NoteManager {
 
     private final List<Note> notes; 
+    private final FileHandler fileHandler;
+    private final String filename;
 
-        public NoteManager(){
+// Konstruktor
+        public NoteManager(String filename){
             this.notes = new ArrayList<>();
+            this.fileHandler = new FileHandler();
+            this.filename = filename;
+            load();
         }    
 //Methode addNote() fürs Hinzüfugen für Notizen in eine Liste
             public void addNote(String title,String content){
@@ -51,4 +57,13 @@ public class NoteManager {
             this.notes.clear();
             this.notes.addAll(notes);
         }
+// Load() und Save() Methode zum verbinden des NoteManager und FileHandler 
+// damit Programm automatisch beim Start lädt und beim Beenden speichert.
+    public void load(){
+        List<Note> loadedNotes = fileHandler.loadNotes(filename);
+        setNotes(loadedNotes);    
+    }
+    public void save(){
+        fileHandler.saveNotes(notes,filename);
+    }
 }
