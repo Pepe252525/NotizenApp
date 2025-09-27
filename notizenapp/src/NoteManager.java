@@ -43,5 +43,12 @@ public class NoteManager {
                             }
                                 return result;
                     }
-// Getter und Setter MEthoden für die Ausgabe der Liste notes.
+// Getter und Setter Methoden für die Ausgabe der Liste notes.
+    public List<Note> getNotes(){
+        return new ArrayList<>(notes);
+        }
+        public void setNotes(List<Note> notes){
+            this.notes.clear();
+            this.notes.addAll(notes);
+        }
 }
