@@ -33,6 +33,10 @@ public static void main(String []args){
 
     FileHandler fh = new FileHandler();
     fh.saveNotes(manager1.getNotes(),"notes.txt");
+
+    NoteManager manager2 = new NoteManager();
+    manager2.setNotes(fh.loadNotes("notes.txt"));
+    manager2.listNotes();
         }
 
 }
