@@ -18,7 +18,7 @@ public static void main(String []args){
             System.out.println("updateAt"+ n1.getUpdateAt());
 
 // Testfälle der Klasse NoteManager
-            NoteManager manager = new NoteManager();
+            NoteManager manager = new NoteManager("notes.txt");
             manager.addNote("Einkaufen","Milch, Kaffee");
             manager.addNote("Schule","Stifte,Buch");
             manager.listNotes();
@@ -27,19 +27,24 @@ public static void main(String []args){
                     System.out.println(n);
                 }
 // Testfälle der Klasse FileHandler
-    NoteManager manager1 = new NoteManager();
+    NoteManager manager1 = new NoteManager("notes.txt");
     manager1.addNote("Auto","BMW,Audi,Benz");
     manager1.addNote("Personen","Lisa,Peter,Marlon,Merlita");
 
     FileHandler fh = new FileHandler();
     fh.saveNotes(manager1.getNotes(),"notes.txt");
 
-    NoteManager manager2 = new NoteManager();
+    NoteManager manager2 = new NoteManager("notes.txt");
     manager2.setNotes(fh.loadNotes("notes.txt"));
     manager2.listNotes();
-        }
+        
 // Testfälle für die automatische Speicherung 
-
+    NoteManager manager3 = new NoteManager("notes.txt");
+    manager3.addNote("Fahrzeug","Flugzeug,Auto");
+    manager3.addNote("Einkauf","Eier,Milch,Brot");
+    manager3.listNotes();
+    manager3.save(); 
+}
 }
 
 

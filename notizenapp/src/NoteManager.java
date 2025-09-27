@@ -19,7 +19,7 @@ public class NoteManager {
             this.notes = new ArrayList<>();
             this.fileHandler = new FileHandler();
             this.filename = filename;
-            load();
+            load(); // Automatisch beim Start Laden
         }    
 //Methode addNote() fürs Hinzüfugen für Notizen in eine Liste
             public void addNote(String title,String content){
