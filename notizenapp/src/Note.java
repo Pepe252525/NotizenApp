@@ -1,4 +1,5 @@
 package notizenapp.src;
+/*Eine robuste Note-Klasse, die eine Notiz sauber repräsentiert. */
 //Importe 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter; 

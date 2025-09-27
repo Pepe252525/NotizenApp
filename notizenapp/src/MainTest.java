@@ -16,6 +16,15 @@ public static void main(String []args){
             System.out.println("createdAt:"+ n1.getCreateAt());
             System.out.println("updateAt"+ n1.getUpdateAt());
 
+            NoteManager manager = new NoteManager();
+            manager.addNote("Einkaufen","Milch, Kaffee");
+            manager.addNote("Schule","Stifte,Buch");
+            manager.listNotes();
+            System.out.println("Suche nach Milch:");
+            for(Note n : manager.searchNotes("Milch")){
+                System.out.println(n);
+            }
+
         }
 
 }
