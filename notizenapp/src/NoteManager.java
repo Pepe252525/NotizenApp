@@ -20,6 +20,7 @@ public class NoteManager {
             this.fileHandler = new FileHandler();
             this.filename = filename;
             load(); // Automatisch beim Start Laden
+            Runtime.getRuntime().addShutdownHook(new Thread(this::save)); // ShutDownHook für automatisches Speichern
         }    
 //Methode addNote() fürs Hinzüfugen für Notizen in eine Liste
             public void addNote(String title,String content){
