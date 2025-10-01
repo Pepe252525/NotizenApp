@@ -1,11 +1,1 @@
-A|||||uto|BMW,Audi,Benz
-P|||||ersonen|Lisa,Peter,Marlon,Merlita
-A||||uto|BMW,Audi,Benz
-P||||ersonen|Lisa,Peter,Marlon,Merlita
-A|||uto|BMW,Audi,Benz
-P|||ersonen|Lisa,Peter,Marlon,Merlita
-F||ahrzeug|Flugzeug,Auto
-E||inkauf|Eier,Milch,Brot
-A|uto|BMW,Audi,Benz
-P|ersonen|Lisa,Peter,Marlon,Merlita
-Biermarken|Becks, Reissdorf, Schreckenkammer
+Biermarken|Becks,Reisdorf

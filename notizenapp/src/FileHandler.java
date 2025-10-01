@@ -38,7 +38,7 @@ public class FileHandler {
             try(BufferedReader reader = new BufferedReader(new FileReader(filename))){
                 String line;
                 while((line = reader.readLine())!= null){
-                    String[] parts = line.split("//|",2);
+                    String[] parts = line.split("//|",1);
                     if(parts.length == 2){
                         loadedNotes.add(new Note(parts[0], parts[1]));
                     }
