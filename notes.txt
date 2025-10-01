@@ -1,8 +1,10 @@
+A||||uto|BMW,Audi,Benz
+P||||ersonen|Lisa,Peter,Marlon,Merlita
 A|||uto|BMW,Audi,Benz
 P|||ersonen|Lisa,Peter,Marlon,Merlita
 A||uto|BMW,Audi,Benz
 P||ersonen|Lisa,Peter,Marlon,Merlita
-A|uto|BMW,Audi,Benz
-P|ersonen|Lisa,Peter,Marlon,Merlita
-Fahrzeug|Flugzeug,Auto
-Einkauf|Eier,Milch,Brot
+F|ahrzeug|Flugzeug,Auto
+E|inkauf|Eier,Milch,Brot
+Auto|BMW,Audi,Benz
+Personen|Lisa,Peter,Marlon,Merlita
