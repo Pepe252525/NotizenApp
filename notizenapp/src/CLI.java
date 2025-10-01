@@ -23,7 +23,7 @@ public class CLI {
                         addNote();
                         break;
                     case "2":
-                        manager.listNotes();
+                        listAllNotes();
                         break;
                     case "3":
                     searchNotes();
@@ -64,6 +64,17 @@ public class CLI {
         }else{
             results.forEach(n->System.out.println(n));
         }
+    }      
+// Methode ListAllNotes
+    private void listAllNotes(){
+        List<Note> allNotes = manager.getNotes();
+        if(allNotes.isEmpty()){
+            System.out.println("Liste ist noch Leer");
+        }else{
+            for(Note n : allNotes){
+                System.out.println(n); // ruft automatisch toString() von Note auf
+            }
+        }
 
-    }       
+    }
 }
