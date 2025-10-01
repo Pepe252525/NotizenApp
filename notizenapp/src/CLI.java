@@ -56,6 +56,14 @@ public class CLI {
     }  
 // Methode searchNotes()
     private void searchNotes(){
+        System.out.print("Suchbegriff: ");
+        String keyword = scanner.nextLine();
+        List<Note> results = manager.searchNotes(keyword);
+        if(results.isEmpty()){
+            System.out.println("Kein Treffer");
+        }else{
+            results.forEach(n->System.out.println(n));
+        }
 
     }       
 }
